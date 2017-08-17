@@ -18,9 +18,9 @@ namespace HATSHOP.Controllers
         {
             var genres = new List<Genre>
            {
-              new Genre { Name = "Disco"},
-              new Genre { Name = "Jazz"},
-              new Genre { Name = "Rock"}
+              new Genre { Name = "male"},
+              new Genre { Name = "female"},
+              new Genre { Name = "Unisex"}
            };
             return View(genres);
 
