@@ -14,6 +14,18 @@ namespace HATSHOP.Controllers
             return View();
         }
 
+        public ActionResult Browse(string genre)
+        {
+            var genres = new List<Genre>
+           {
+              new Genre { Name = "Disco"},
+              new Genre { Name = "Jazz"},
+              new Genre { Name = "Rock"}
+           };
+            return View(genres);
+
+        }
+
         public ActionResult Items(int id)
         {
             var category = new Category { Type = "Category " + id };
