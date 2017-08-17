@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using HATSHOP.Models;
 
 namespace HATSHOP.Controllers
 {
@@ -11,6 +12,12 @@ namespace HATSHOP.Controllers
         public IActionResult Index()
         {
             return View();
+        }
+
+        public ActionResult Items(int id)
+        {
+            var category = new Category { Type = "Category " + id };
+            return View(category);
         }
 
         public IActionResult About()
