@@ -8,7 +8,7 @@ namespace HATSHOP.Models
 {
     public class HatShopEntities : DbContext
     {
-        public DbSet<Category> Category { get; set; }
+        public DbSet<Item> Item { get; set; }
         public DbSet<Genre> Genres { get; set; }
     }
 }

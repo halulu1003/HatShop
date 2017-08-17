@@ -28,7 +28,7 @@ namespace HATSHOP.Controllers
 
         public ActionResult Items(int id)
         {
-            var category = new Category { Type = "Category " + id };
+            var category = new Item { Type = "Item " + id };
             return View(category);
         }
 
