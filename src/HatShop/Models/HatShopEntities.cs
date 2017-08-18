@@ -10,5 +10,6 @@ namespace HATSHOP.Models
     {
         public DbSet<Item> Item { get; set; }
         public DbSet<Genre> Genres { get; set; }
+        public DbSet<Brand> Artists { get; set; }
     }
 }
